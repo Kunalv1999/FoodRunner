@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Orange"
+    tools:context=".ForgotPass">
+    <ImageView
+        android:id="@+id/imgFPLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/txtForgotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Mobile Number and Password Below:"
+        android:layout_below="@+id/imgFPLogo"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/edtForgotMob"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtForgotText"
+        android:background="@color/white"
+        android:hint="Mobile Number"
+        android:layout_margin="20dp"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/edtForgotEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/edtForgotMob"
+        android:background="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Email address"/>
+    <Button
+        android:id="@+id/btnForgotNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtForgotEmail"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/Red"
+        android:text="Next"
+
+        />
+
+</RelativeLayout>

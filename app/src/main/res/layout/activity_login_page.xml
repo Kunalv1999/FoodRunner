@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Orange">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="40dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/edtMob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imgLogo"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:hint="Moible Number 10 Digit"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:maxLines="1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edtMob"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/white"
+                android:hint="Enter Password"
+                android:maxLength="15"
+                android:password="true"
+                android:maxLines="1"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edtPass"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/Red"
+                android:text="LOGIN" />
+
+            <TextView
+                android:id="@+id/txtForgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/btnLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="Forgot Password ?"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txtForgotpass"
+                android:autoLink="all"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:linksClickable="true"
+                android:text="Don't have an account? SignUp Now"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
